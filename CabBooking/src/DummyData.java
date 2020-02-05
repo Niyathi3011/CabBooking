@@ -3,7 +3,7 @@ import IO.TripOrder;
 import java.util.ArrayList;
 import java.util.List;
 
-public class dummyData {
+public class DummyData {
 
     public static List<TripOrder> getData(){
 
