@@ -5,10 +5,10 @@ import java.util.List;
 public class DriversList {
 
 
-    private final String customers_name;
+    private final String customersName;
 
     public DriversList(String customers_name, double customer_avgRating, List<EligibleDrivers> eligibleDrivers) {
-        this.customers_name = customers_name;
+        this.customersName = customers_name;
         this.customer_avgRating = customer_avgRating;
         this.eligibleDrivers = eligibleDrivers;
     }
@@ -18,8 +18,8 @@ public class DriversList {
 
 
 
-    public String getCustomers_name() {
-        return customers_name;
+    public String getCustomersName() {
+        return customersName;
     }
 
     public double getCustomer_avgRating() {
@@ -31,7 +31,7 @@ public class DriversList {
     }
 
     public void getList(DriversList List){
-        System.out.println(List.getCustomers_name()+" "+List.getCustomer_avgRating());
+        System.out.println(List.getCustomersName()+" "+List.getCustomer_avgRating());
         for(EligibleDrivers drivers:List.getEligibleDrivers())
             System.out.println(drivers.getDrivers_name()+" "+drivers.getDriver_avgRating());
     }
