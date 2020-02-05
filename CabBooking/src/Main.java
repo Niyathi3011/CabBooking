@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
 
         prevTripRatings ratings = new prevTripRatings();
-        List<TripOrder> tripOrders = dummyData.getData();
+        List<TripOrder> tripOrders = DummyData.getData();
         ratings.getAverage(tripOrders);
 
         String customers_name;

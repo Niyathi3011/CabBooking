@@ -1,13 +1,13 @@
 package IO;
 
-public class eligibleDrivers {
+public class EligibleDrivers {
 
 
       private final String drivers_name;
       private final double driver_avgRating;
 
 
-    public eligibleDrivers(String drivers_name, double driver_avgRating) {
+    public EligibleDrivers(String drivers_name, double driver_avgRating) {
         this.drivers_name = drivers_name;
         this.driver_avgRating = driver_avgRating;
     }

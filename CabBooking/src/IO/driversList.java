@@ -2,18 +2,19 @@ package IO;
 
 import java.util.List;
 
-public class driversList {
+public class DriversList {
+
 
     private final String customers_name;
 
-    public driversList(String customers_name, double customer_avgRating, List<IO.eligibleDrivers> eligibleDrivers) {
+    public DriversList(String customers_name, double customer_avgRating, List<EligibleDrivers> eligibleDrivers) {
         this.customers_name = customers_name;
         this.customer_avgRating = customer_avgRating;
         this.eligibleDrivers = eligibleDrivers;
     }
 
     private final double customer_avgRating;
-    private final List<eligibleDrivers> eligibleDrivers;
+    private final List<EligibleDrivers> eligibleDrivers;
 
 
 
@@ -25,13 +26,13 @@ public class driversList {
         return customer_avgRating;
     }
 
-    public List<IO.eligibleDrivers> getEligibleDrivers() {
+    public List<EligibleDrivers> getEligibleDrivers() {
         return eligibleDrivers;
     }
 
-    public void getList(driversList List){
+    public void getList(DriversList List){
         System.out.println(List.getCustomers_name()+" "+List.getCustomer_avgRating());
-        for(eligibleDrivers drivers:List.getEligibleDrivers())
+        for(EligibleDrivers drivers:List.getEligibleDrivers())
             System.out.println(drivers.getDrivers_name()+" "+drivers.getDriver_avgRating());
     }
 }

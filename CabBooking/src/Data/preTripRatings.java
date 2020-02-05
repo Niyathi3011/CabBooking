@@ -2,20 +2,21 @@ package Data;
 
 import IO.TripOrder;
 import IO.driversList;
-import IO.eligibleDrivers;
+import IO.EligibleDrivers;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class prevTripRatings {
+public class PrevTripRatings {
+
 
     private final Map<String,List<Integer>>customerAvg;
     private final Map<String,List<Integer>>driverAvg;
-    private final List<eligibleDrivers> eligibleDriversList;
+    private final List<EligibleDrivers> eligibleDriversList;
 
-    public prevTripRatings() {
+    public PrevTripRatings() {
 
         this.driverAvg=new HashMap<>();
         this.eligibleDriversList=new ArrayList<>();
@@ -46,7 +47,7 @@ public class prevTripRatings {
 
             if(avg(driverAvg.get(customers_name))>avg(customerAvg.get(name))){
 
-                eligibleDriversList.add(new eligibleDrivers(name,avg(customerAvg.get(name))));
+                eligibleDriversList.add(new EligibleDrivers(name,avg(customerAvg.get(name))));
             }
         }
 
