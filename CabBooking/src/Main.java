@@ -1,6 +1,8 @@
-import Data.prevTripRatings;
+import Data.PrevTripRatings;
+
+import IO.DriversList;
 import IO.TripOrder;
-import IO.driversList;
+
 
 
 import java.util.List;
@@ -10,15 +12,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        prevTripRatings ratings = new prevTripRatings();
+        PrevTripRatings ratings = new PrevTripRatings();
         List<TripOrder> tripOrders = DummyData.getData();
         ratings.getAverage(tripOrders);
 
-        String customers_name;
+        String customersName;
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the customers name");
-        customers_name = sc.nextLine();
-        driversList list = ratings.getEligibleDrivers(customers_name);
+        customersName = sc.nextLine();
+        DriversList list = ratings.getEligibleDrivers(customersName);
 
         list.getList(list);
 

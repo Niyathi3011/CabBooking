@@ -2,35 +2,35 @@ package IO;
 
 public class TripOrder {
 
-    private final String drivers_name;
-    private final int drivers_rating;
-    private final String customers_name;
-    private final int customers_rating;
+    private final String driversName;
+    private final int driversRating;
+    private final String customersName;
+    private final int customersRating;
 
 
-    public TripOrder(String drivers_name, int drivers_rating, String customers_name, int customers_rating) {
-        this.drivers_name = drivers_name;
-        this.drivers_rating = drivers_rating;
-        this.customers_name = customers_name;
-        this.customers_rating = customers_rating;
+    public TripOrder(String driversName, int driversRating, String customersName, int customersRating) {
+        this.driversName = driversName;
+        this.driversRating = driversRating;
+        this.customersName = customersName;
+        this.customersRating = customersRating;
     }
 
-    public String getDrivers_name() {
+    public String getDriversName() {
 
-        return drivers_name;
+        return driversName;
     }
 
-    public int getDrivers_rating() {
+    public int getDriversRating() {
 
-        return drivers_rating;
+        return driversRating;
     }
 
-    public String getCustomers_name() {
-        return customers_name;
+    public String getCustomersName() {
+        return customersName;
     }
 
-    public int getCustomers_rating() {
+    public int getCustomersRating() {
 
-        return customers_rating;
+        return customersRating;
     }
 }

@@ -7,13 +7,13 @@ public class DriversList {
 
     private final String customersName;
 
-    public DriversList(String customers_name, double customer_avgRating, List<EligibleDrivers> eligibleDrivers) {
-        this.customersName = customers_name;
-        this.customer_avgRating = customer_avgRating;
+    public DriversList(String customersName, double customerAvgRating, List<EligibleDrivers> eligibleDrivers) {
+        this.customersName = customersName;
+        this.customerAvgRating = customerAvgRating;
         this.eligibleDrivers = eligibleDrivers;
     }
 
-    private final double customer_avgRating;
+    private final double customerAvgRating;
     private final List<EligibleDrivers> eligibleDrivers;
 
 
@@ -22,8 +22,8 @@ public class DriversList {
         return customersName;
     }
 
-    public double getCustomer_avgRating() {
-        return customer_avgRating;
+    public double getCustomerAvgRating() {
+        return customerAvgRating;
     }
 
     public List<EligibleDrivers> getEligibleDrivers() {
@@ -31,8 +31,8 @@ public class DriversList {
     }
 
     public void getList(DriversList List){
-        System.out.println(List.getCustomersName()+" "+List.getCustomer_avgRating());
+        System.out.println(List.getCustomersName()+" "+List.getCustomerAvgRating());
         for(EligibleDrivers drivers:List.getEligibleDrivers())
-            System.out.println(drivers.getDrivers_name()+" "+drivers.getDriver_avgRating());
+            System.out.println(drivers.getDriversName()+" "+drivers.getDriverAvgRating());
     }
 }

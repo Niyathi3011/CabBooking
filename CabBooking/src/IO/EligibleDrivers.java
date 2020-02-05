@@ -3,20 +3,20 @@ package IO;
 public class EligibleDrivers {
 
 
-      private final String drivers_name;
-      private final double driver_avgRating;
+      private final String driversName;
+      private final double driverAvgRating;
 
 
-    public EligibleDrivers(String drivers_name, double driver_avgRating) {
-        this.drivers_name = drivers_name;
-        this.driver_avgRating = driver_avgRating;
+    public EligibleDrivers(String driversName, double driverAvgRating) {
+        this.driversName = driversName;
+        this.driverAvgRating = driverAvgRating;
     }
 
-    public String getDrivers_name() {
-        return drivers_name;
+    public String getDriversName() {
+        return driversName;
     }
 
-    public double getDriver_avgRating() {
-        return driver_avgRating;
+    public double getDriverAvgRating() {
+        return driverAvgRating;
     }
 }
